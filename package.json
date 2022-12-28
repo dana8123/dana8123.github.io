@@ -1,0 +1,23 @@
+{
+  "name": "dana8123.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dana8123/dana8123.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dana8123/dana8123.github.io/issues"
+  },
+  "homepage": "https://github.com/dana8123/dana8123.github.io#readme",
+  "dependencies": {
+    "vue": "^3.2.45",
+    "vue-notion": "^3.0.0-alpha.1"
+  }
+}
