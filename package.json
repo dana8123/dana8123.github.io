@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,10 @@
   },
   "homepage": "https://github.com/dana8123/dana8123.github.io#readme",
   "dependencies": {
+    "core-js": "^3.27.0",
+    "katex": "^0.16.4",
+    "nuxt": "^3.0.0",
+    "prismjs": "^1.29.0",
     "vue": "^3.2.45",
     "vue-notion": "^3.0.0-alpha.1"
   }
