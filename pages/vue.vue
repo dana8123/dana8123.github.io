@@ -3,14 +3,14 @@
 </template>
 
 <script>
-import { NotionRenderer, getPageBlocks } from "vue-notion";
+import { getPageBlocks, NotionRenderer } from "vue-notion";
 
 export default {
   components: { NotionRenderer },
   data: () => ({ blockMap: null }),
   async created() {
     // get Notion blocks from the API via a Notion pageId
-    this.blockMap = await getPageBlocks("8c1ab01960b049f6a282dda64a94afc7");
+    this.blockMap = await getPageBlocks("37abeac23f8f445fb316884d3b8dbbcc");
   },
 };
 </script>
