@@ -1,20 +1,19 @@
 <template>
-  <NotionRenderer :blockMap="blockMap" fullPage />
+  <div>
+    <p><b>--Content from Notion should appear below--</b></p>
+    <NotionRenderer v-if="headerMap" :blockMap="headerMap" />
+    <p v-else>loading...</p>
+    <p><b>--Content from Notion should appear above--</b></p>
+  </div>
 </template>
 
 <script>
-import { getPageBlocks, NotionRenderer } from "vue-notion";
-
 export default {
-  components: { NotionRenderer },
-  data: () => ({ blockMap: null, blockTable:null }),
-  async created() {
-    // get Notion blocks from the API via a Notion pageId
-    this.blockMap = await getPageBlocks("545fec43688d457c89d54d1b1a3ac5dd");
+  data: () => ({ headerMap: null }),
+  async fetch() {
+    this.headerMap = await this.$notion.getPageBlocks(
+      "03b76f42f2364d0897f0a0b8d8986795"
+    );
   },
 };
 </script>
-
-<style>
-@import "vue-notion/src/styles.css"; /* optional Notion-like styles */
-</style>
