@@ -1,16 +1,18 @@
 <template>
   <NotionRenderer :blockMap="blockMap" fullPage />
+  <NotionRenderer :blockTable="blockTable"></NotionRenderer>
 </template>
 
 <script>
-import { getPageBlocks, NotionRenderer } from "vue-notion";
+import { getPageBlocks, getPageTable, NotionRenderer } from "vue-notion";
 
 export default {
   components: { NotionRenderer },
-  data: () => ({ blockMap: null }),
+  data: () => ({ blockMap: null, blockTable:null }),
   async created() {
     // get Notion blocks from the API via a Notion pageId
-    this.blockMap = await getPageBlocks("37abeac23f8f445fb316884d3b8dbbcc");
+    this.blockMap = await getPageBlocks("545fec43688d457c89d54d1b1a3ac5dd");
+    this.blockTable = await getPageTable("10efc36b73004137bd635de3f1fac257")
   },
 };
 </script>
