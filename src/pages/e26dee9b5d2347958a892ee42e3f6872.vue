@@ -11,7 +11,7 @@
   
     async created() {
       // get Notion blocks from the API via a Notion pageId
-      this.blockMap = await getPageBlocks("03b76f42f2364d0897f0a0b8d8986795");
+      this.blockMap = await getPageBlocks("e26dee9b5d2347958a892ee42e3f6872");
     },
   
   };
