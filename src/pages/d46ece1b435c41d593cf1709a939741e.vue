@@ -5,7 +5,7 @@
   
   <script>
   import { getPageBlocks, NotionRenderer, getPageTable } from "vue-notion";
-  
+  // kafka
   export default {
     components: { NotionRenderer },
     data: () => ({ blockMap: null, fullPage:null }),
