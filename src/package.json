@@ -7,7 +7,7 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "copy": "cp -r ./dist/* ../ && cp ./dist/.nojekyll ../"
+    "copy": "cp -r -f ./dist/* ../ && cp -f ./dist/.nojekyll ../"
   },
   "dependencies": {
     "core-js": "^3.21.1",
