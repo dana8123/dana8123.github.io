@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/b49ebd94518d48ae934b82acb2e8d1ec", {data:[{}],fetch:{},mutations:void 0});
